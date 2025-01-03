@@ -10,10 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: run tests
+      - name: run test:ci
         uses: actions/setup-node@v4
         with:
           node-version: "22.x"
           cache: "npm"
       - run: npm ci
       - run: npm run test:ci
+  type-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: run type-check
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.x"
+          cache: "npm"
+      - run: npm ci
+      - run: npm run type-check
