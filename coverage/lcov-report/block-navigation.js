@@ -1,4 +1,4 @@
-/* eslint-disable */
+ 
 var jumpToCode = (function init() {
     // Classes of code we would like to highlight in the file view
     var missingCoverageClasses = ['.cbranch-no', '.cstat-no', '.fstat-no'];
@@ -34,7 +34,7 @@ var jumpToCode = (function init() {
         missingCoverageElements.item(index).scrollIntoView({
             behavior: 'smooth',
             block: 'center',
-            inline: 'center'
+            inline: 'center',
         });
     }
 
