@@ -1,4 +1,4 @@
-import { format } from 'date-fns'
+import { format } from 'date-fns';
 export const formatDate = (timestamp: number) => {
-    return format(new Date(timestamp), 'dd/MM/yyyy')
-}
+    return format(new Date(timestamp), 'dd/MM/yyyy');
+};
