@@ -10,6 +10,9 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
+            - name: Print all environment variables
+              run: |
+                  echo "Printing all environment variables"
             - name: Echo environment variables
               run: |
                   echo "EC2_HOST=${{ secrets.EC2_HOST }}"
