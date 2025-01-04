@@ -6,6 +6,7 @@ on:
 jobs:
     deploy:
         runs-on: ubuntu-latest
+        environment: deploy-to-ec2 # Reference the environment
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
